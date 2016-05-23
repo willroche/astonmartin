@@ -1,0 +1,300 @@
+// ==========================================================================
+// Typography (t)
+// ==========================================================================
+
+
+// The typography file is for type styles. These will be defined as
+// modules so that the styles can be easily extended in later
+// phases of the project.
+
+& {
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+// Mixins
+// ==========================================================================
+// Global heading styles can be defined as mixins and included in any and each
+// of the type modules. Any non-global styles can be defined thereafter.
+// Duplicate as necessary.
+
+body {
+	//-webkit-font-smoothing: antialiased;
+	font-family: @lato;
+}
+
+.h1( ... ) {
+	font-size: 99px;
+	line-height: 100px;
+	font-family: @lato;
+	font-weight: 400;
+	letter-spacing: -2.5px;
+	text-transform: uppercase;
+	@media @md {
+		font-size: 70px;
+		line-height: 70px;
+	}
+	@media @sm {
+		font-size: 65px;
+		line-height: 75px;
+	}
+	@media @xs {
+		font-size: 55px;
+		line-height: 65px;
+	}
+}
+
+.h2( ... ) {
+	font-size: 43px;
+	font-family: @lato;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+	text-transform: uppercase;
+	@media @md {
+		font-size: 34px;
+	}
+	@media @sm {
+		font-size: 29px;
+	}
+}
+
+.h3( ... ) {
+	font-size: 32px;
+	font-family: @lato;
+	font-weight: 400;
+	letter-spacing: -0.5px;
+}
+
+.h4( ... ) {
+	font-size: 26px;
+	line-height: 34px;
+	font-family: @lato;
+	font-weight: 400;
+	@media @md {
+		font-size: 24px;
+		line-height: 30px;
+	}
+	@media @sm {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.h5( ... ) {
+	font-size: 22px;
+	line-height: 28px;
+	font-weight: normal;
+}
+
+.p( ... ) {
+}
+
+a {
+	.transition( all, 0.3s, ease-in-out );
+	text-decoration: none;
+	outline: 0;
+	.link {
+		display: inline-block;
+		font-size: 16px;
+		text-transform: uppercase;
+		line-height: 24px;
+		color: @font-dark;
+		border-top: @font-dark 1px solid;
+		padding-top: 8px;
+		font-family: @lato;
+	}
+	&.back-to-aston {
+		color: @font-light;
+		font-size: 14px;
+		line-height: 22px;
+		display: inline-block;
+		margin-left: 39px;
+		text-transform: uppercase;
+		font-family: @lato;
+	}
+	&:hover {
+	}
+}
+
+h1 {
+	.h1();
+}
+
+h2 {
+	.h2();
+}
+
+h3 {
+	.h3();
+}
+
+h4 {
+	.h4();
+}
+
+h5 {
+	.h5();
+}
+
+p {
+	.p();
+}
+
+blockquote {
+	display: block;
+	.masonary & {
+		margin: 0;
+		width: 100%;
+		font-size: 24px;
+    	line-height: 30px;
+    	font-family: @miller;
+    	font-style: italic;
+    	padding: 24px 0;
+    	@media @md {
+    		font-size: 18px;
+    		line-height: 26px;
+    		padding: 5px 0;
+    	}
+	}
+}
+
+.quote-holder {
+	position: absolute;
+	top: 0;
+	height: 100%;
+	.quote-center {
+		height: 100%;
+	}
+	.quote {
+		.bg-hi-dpi( transparent, '@{dir-images}quote-open.png', 50%, 50%, no-repeat, 22px, 22px);
+		width: 36px;
+		height: 60px;
+		display: inline-block;
+		border-bottom: 1px solid @bg-dark;
+		&.close {
+			border-top: 1px solid @bg-dark;
+			border-bottom: 0;
+			.bg-hi-dpi( transparent, '@{dir-images}quote-close.png', 50%, 50%, no-repeat, 22px, 22px);
+		}
+	}
+}
+
+// Editable content
+// ==========================================================================
+// For blocks with CMS content where things like lists need to be styled.
+
+.masonary {
+	h4 {
+		// .h4();
+		color: @font-dark;
+		text-transform: uppercase;
+		margin: 0 0 10px 0;
+	}
+	.box-label {
+		font-size: 16px;
+		font-family: @lato;
+		font-weight: 400;
+		background: @bg-dark;
+		color: @bg-light;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+}
+
+.t-hero {
+	h1 {
+		.h1();
+		margin: 0px 0px 18px 0px;
+	}
+	h4 {
+		.h4();
+		margin: 22px 0px 34px 0px;
+	}
+}
+
+.t-updates {
+	h2 {
+		.h2();
+		margin: 0 0 15px 0;
+	}
+	h5 {
+		.h5();
+		font-family: @miller;
+		margin: 0 0 30px 0;
+	}
+}
+
+.t-search {
+	h1 {
+		.h1();
+		margin: 40px 0 0 0;
+		@media @sm {
+			margin: 10px 0 0 0;
+		}
+	}
+}
+
+.t-listing {
+	a {
+		display: block;
+		outline: none;
+		h3 {
+			.h3();
+			text-transform: uppercase;
+			margin: 27px 0 12px 0;
+			color: @font-light;
+			.transition( all, 0.3s, ease-out );
+			line-height: 32px;
+			@media @sm {
+				font-size: 24px;
+			}
+		}
+		h5 {
+			.h5();
+			font-size: 16px;
+			font-family: @lato;
+			margin: 0;
+			letter-spacing: 1.3px;
+			color: @font-light;
+			display: inline-block;
+			padding-top: 7px;
+			.transition( all, 0.3s, ease-out );
+			border-top: 2px solid @bg-light;
+			text-transform: uppercase;
+			@media @sm {
+				font-size: 18px;
+			}
+		}
+		img {
+			display: block;
+		}
+		&:hover {
+			h3, h5 {
+				color: rgba(255, 255, 255, 0.6);
+				border-color: rgba(255, 255, 255, 0.6);
+			}
+		}
+	}
+}
+
+// Center aligned
+// ==========================================================================
+.t-center {
+	text-align: center;
+}
+
+// White text
+// ==========================================================================
+.t-light {
+	h1, h2, h3, h4, p {
+		color: @font-light;
+	}
+}
+
+// Right aligned
+// ==========================================================================
+.t-right {
+	text-align: right;
+}
+
+// END OF SCOPE
+}

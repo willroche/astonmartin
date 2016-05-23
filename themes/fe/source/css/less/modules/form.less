@@ -1,0 +1,112 @@
+// ==========================================================================
+// Form styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Form styles
+// ==========================================================================
+
+.slice-updates {
+	form {
+		@media @md {
+			width: 50%;
+			margin: 0 auto;
+		}
+	}
+}
+
+.text {
+	border: 1px solid #999999;
+	line-height: 38px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-size: 16px;
+	font-family: @lato;
+	outline: none;
+	appearance: none;
+  	box-shadow: none;
+  	border-radius: none;
+  	color: #999999;
+  	height: 39px;
+  	.slice-updates & {
+  		margin-right: 1%;
+  		width: 17%;
+  		float: left;
+  		display: block;
+  		@media @md {
+  			width: 100%;
+  			float: none;
+  			margin: 0 0 20px 0;
+  			height: 50px;
+  			line-height: 50px;
+  		}
+  		@media @sm {
+  			width: 100%;
+  			float: none;
+  			margin: 0 0 20px 0;
+  			height: 50px;
+  			line-height: 50px;
+  		}
+  	}
+  	&.title {
+		width: 9%;
+		.slice-updates & {
+			@media @md {
+				width: 100%;
+			}
+			@media @sm {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.search {
+	padding: 30px 20px;
+	font-size: 16px;
+	font-family: @lato;
+	outline: none;
+	appearance: none;
+  	box-shadow: none;
+  	border-radius: none;
+  	color: #999999;
+  	width: 100%;
+  	@media @md {
+  		padding: 20px 20px;
+  	}
+  	@media @sm {
+  		padding: 20px 20px;
+  	}
+}
+
+.submit {
+	.slice-updates & {
+  		width: 16%;
+  		height: 39px;
+  		display: block;
+  		float: left;
+  		@media @md {
+  			width: 50%;
+  			float: none;
+  			margin: 0 auto;
+  			height: 50px;
+  			line-height: 50px;
+  		}
+  		@media @sm {
+  			width: 50%;
+  			float: none;
+  			margin: 0 auto;
+  			height: 50px;
+  			line-height: 50px;
+  		}
+  	}
+}
+
+// END OF SCOPE
+}

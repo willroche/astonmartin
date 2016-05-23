@@ -1,0 +1,30 @@
+// ==========================================================================
+// Listing styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Listing styles
+// ==========================================================================
+.listing {
+	margin-bottom: 75px;
+	@media @md {
+		margin-bottom: 55px;
+	}
+	@media @sm {
+		margin-bottom: 35px;
+	}
+	img {
+		@media @sm {
+			margin: 0 auto;
+		}
+	}
+}
+
+// END OF SCOPE
+}

@@ -1,0 +1,52 @@
+// ==========================================================================
+// Hero styles for all pages
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Hero styles
+// ==========================================================================
+
+.home-hero {
+	width: 100%;
+	height: 736px;
+	background-size: cover;
+	background-position: 50%;
+	background-repeat: no-repeat;
+	position: relative;
+	@media @md {
+		height: 500px;
+	}
+	@media @sm {
+		height: 550px;
+	}
+	.home-hero-content {
+		position: absolute;
+		width: 100%;
+		bottom: 165px;
+		@media @md {
+			bottom: 45px;
+		}
+		@media @sm {
+			bottom: 45px;
+		}
+		.border-top {
+			height: 1px;
+			width: 100%;
+			background-color: @bg-light;
+			@media @sm {
+				width: 50%;
+				margin: 0 auto;
+				background-color: rgba(255, 255, 255, 0.5)
+			}
+		}
+	}
+}
+
+// END OF SCOPE
+}

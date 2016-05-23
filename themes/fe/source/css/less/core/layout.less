@@ -1,0 +1,77 @@
+// ==========================================================================
+// Layout (l)
+// ==========================================================================
+
+
+// The layout file is for high level layout based styles.
+// These will largely be the grid and any container styles required.
+
+& {
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+@import (multiple, less) "less-helpers/less/grid.less";
+
+
+// Base
+// ==========================================================================
+body {
+	margin: 0;
+}
+
+// apply a natural box layout model to all elements BECAUSE IT'S AWESOME
+* {
+	.box-sizing( border-box );
+}
+
+// Max width/responsive images
+img {
+	@media @not-lg {
+		max-width: 100%;
+		width: auto\9;
+		height: auto;
+		vertical-align: middle;
+		border: 0;
+	}
+}
+
+// Grid definition
+// ==========================================================================
+
+& {
+	.grid( 12, 88px, 20px, 'l' );
+}
+
+// Extra small Grid definition
+// ==========================================================================
+@media @xs {
+	& {
+		.grid( 12, 100%, 20px, 'l', 'f' );
+	}
+}
+
+// Small Grid definition
+// ==========================================================================
+@media @sm {
+	& {
+		.grid( 12, 100%, 20px, 'l', 'f' );
+	}
+}
+
+// Medium Grid definition
+// ==========================================================================
+@media @md {
+	& {
+		.grid( 12, 43px, 20px, 'l' );
+	}
+}
+
+// Medium Grid definition
+// ==========================================================================
+@media @lg {
+	& {
+		.grid( 12, 70px, 20px, 'l' );
+	}
+}
+
+
+}

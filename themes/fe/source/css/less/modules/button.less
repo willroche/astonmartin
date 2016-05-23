@@ -1,0 +1,107 @@
+// ==========================================================================
+// Button styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Button
+// ==========================================================================
+
+.button {
+	&.button-hero {
+		font-size: 17px;
+		font-family: @lato;
+		font-weight: 400;
+		color: @font-light;
+		background: transparent;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		border: 2px solid @bg-light;
+		padding: 10px 66px;
+		display: inline-block;
+		@media @md {
+			padding: 10px 40px;
+			font-size: 20px;
+		}
+		@media @sm {
+			padding: 10px 25px;
+			font-size: 20px;
+		}
+		.transition( all, 0.3s, ease-out );
+		&:hover {
+			background: @bg-light;
+			color: @font-dark;
+		}
+	}
+	&.submit {
+		background: @bg-dark;
+  		color: @font-light;
+  		border: 0;
+  		text-transform: uppercase;
+  		font-family: @lato;
+  		letter-spacing: 3px;
+  		.transition( all, 0.3s, ease-out );
+		&:hover {
+			background: @bg-light;
+			color: @font-dark;
+		}
+	}
+}
+
+.button-nav {
+	float: left;
+	width: 28px;
+	height: 24px;
+	cursor: pointer;
+	position: relative;
+	display: inline-block;
+	padding-top: 10px;
+	&.open {
+		.button-nav-lines {
+			background: transparent;
+			&:before {
+				margin-top: 0;
+				.transform( rotate( 45deg ) );
+			}
+			&:after {
+				margin-top: 0;
+				.transform( rotate( -45deg ) );
+			}
+		}
+	}
+	.button-nav-lines {
+		float: left;
+		width: 100%;
+		height: 2px;
+		background: @bg-light;
+		position: relative;
+		&:before {
+			position: absolute;
+			content: '';
+			width: 28px;
+			height: 2px;
+			background-color: @bg-light;
+			display: block;
+			margin-top: -8px;
+			.transition( all, 0.1s, ease-out );
+		}
+		&:after {
+			position: absolute;
+			content: '';
+			width: 28px;
+			height: 2px;
+			background-color: @bg-light;
+			display: block;
+			margin-top: 8px;
+			.transition( all, 0.1s, ease-out );
+		}
+	}
+}
+
+// END OF SCOPE
+}
