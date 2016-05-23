@@ -1,0 +1,7 @@
+filesize = "0"
+datestamp = "1464014376"
+description = ""
+generator = "Backup and Migrate for Drupal (https://www.drupal.org/project/backup_migrate)"
+generatorversion = "8.x-4.x-dev"
+generatorurl = "https://www.drupal.org/project/backup_migrate"
+bam_sourceid = ""
