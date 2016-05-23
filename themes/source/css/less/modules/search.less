@@ -1,0 +1,39 @@
+// ==========================================================================
+// Search styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Search styles
+// ==========================================================================
+.no-scroll {
+	overflow: hidden;
+}
+
+.search-holder {
+	padding: 30px 0 70px 0;
+	@media @md {
+		padding: 30px 0 40px 0;
+	}
+	@media @sm {
+		padding: 10px 0 10px 0;
+	}
+}
+
+.search-results {
+	margin: 70px 0 30px 0;
+	@media @md {
+		margin: 30px 0;
+	}
+	@media @sm {
+		margin: 50px 0 30px 0;
+	}
+}
+
+// END OF SCOPE
+}

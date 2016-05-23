@@ -1,0 +1,49 @@
+// ==========================================================================
+// Navigation styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Navigation
+// ==========================================================================
+
+.main-menu-holder {
+	margin-top: 30px;
+	@media @sm {
+		margin-top: 10px;
+	}
+	nav {
+		ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+			li {
+				margin: 20px 0;
+				a {
+					font-size: 38px;
+					font-family: @lato;
+					color: @font-light;
+					text-transform: uppercase;
+					.transition( all, 0.3s, ease-out );
+					@media @md {
+						font-size: 30px;
+					}
+					@media @sm {
+						font-size: 20px;
+					}
+					&:hover {
+						color: rgba(255, 255, 255, 0.6);
+					}
+				}
+			}
+		}
+	}
+}
+
+// END OF SCOPE
+}
