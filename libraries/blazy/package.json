@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      "blazy",
+      "/Users/leowoods/Sites/astonmartin.localhost.com"
+    ]
+  ],
+  "_from": "blazy@latest",
+  "_id": "blazy@1.6.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/blazy",
+  "_nodeVersion": "0.10.36",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/blazy-1.6.2.tgz_1462828338403_0.18100052815862"
+  },
+  "_npmUser": {
+    "email": "hello@dinbror.dk",
+    "name": "dinbror"
+  },
+  "_npmVersion": "2.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "blazy",
+    "raw": "blazy",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/blazy/-/blazy-1.6.2.tgz",
+  "_shasum": "9b2558ded14f6726a1ca5f92dd0856d952709d45",
+  "_shrinkwrap": null,
+  "_spec": "blazy",
+  "_where": "/Users/leowoods/Sites/astonmartin.localhost.com",
+  "author": {
+    "name": "Bjørn Klinggaard",
+    "url": "http://dinbror.dk/blazy"
+  },
+  "bugs": {
+    "url": "https://github.com/dinbror/blazy/issues"
+  },
+  "dependencies": {},
+  "description": "A fast lightweight pure JavaScript script for lazy loading and multi-serving images, iframes, videos and more.",
+  "devDependencies": {},
+  "directories": {
+    "example": "example"
+  },
+  "dist": {
+    "shasum": "9b2558ded14f6726a1ca5f92dd0856d952709d45",
+    "tarball": "https://registry.npmjs.org/blazy/-/blazy-1.6.2.tgz"
+  },
+  "gitHead": "b0cc033a0c968094bf15987368b55231878ae887",
+  "homepage": "https://github.com/dinbror/blazy",
+  "keywords": [
+    "blazy",
+    "blazyjs",
+    "blazy.js",
+    "lazy",
+    "lazyload",
+    "lazyloading",
+    "image",
+    "images",
+    "iframe",
+    "video",
+    "unity",
+    "retina",
+    "responsive",
+    "performance"
+  ],
+  "license": "MIT",
+  "main": "blazy.js",
+  "maintainers": [
+    {
+      "email": "hello@dinbror.dk",
+      "name": "dinbror"
+    }
+  ],
+  "name": "blazy",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dinbror/blazy.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.6.2"
+}
