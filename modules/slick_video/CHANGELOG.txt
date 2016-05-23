@@ -1,0 +1,17 @@
+
+Slick video 8.x-1.0-dev, 2016-05-09
+-----------------------------------
+- Removed redundant Preloader option since the classes are within image
+  containers. Maybe more reasonable for Views later which can text, images, etc.
+
+Slick video 8.x-1.0-dev, 2016-05-05
+-----------------------------------
+- Added option Preloader for Slick > 1.5.9 (which is unfortunately still broken).
+
+Slick video 8.x-1.0-dev, 2016-04-11
+-----------------------------------
+- A couple of cleanups.
+
+Slick video 8.x-1.0-dev, 2016-04-06
+-----------------------------------
+- Initial commit.
