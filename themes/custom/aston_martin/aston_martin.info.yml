@@ -5,10 +5,12 @@ package: Other
 core: 8.x
 libraries:
   - aston_martin/global-styling
+  - aston_martin/js-files
 
 base theme: false
 
 regions:
+  search: search
   primary_menu: Primary menu
   featured_top: Featured top
   content: Content

@@ -3,3 +3,14 @@ global-styling:
   css:
     base:
       source/css/style.css: {}
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
+
+js-files:
+  version: 1.x
+  js:
+    js/script.js: {}
+  dependencies:
+    - core/jquery
