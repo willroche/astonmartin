@@ -1,0 +1,62 @@
+// ==========================================================================
+// General Variables
+// ==========================================================================
+
+// Backgrounds
+@bg-dark: #000000;
+@bg-light: #FFFFFF;
+@bg-updates: #e7e7e7;
+
+// Font Colours
+@font-dark: #000000;
+@font-light: #FFFFFF;
+
+// Font Families
+
+@lato: 'lato', Arial, sans-serif;
+@miller: miller_displayroman, times, serif;
+
+
+// Directories
+// This should be prefixed to all asset urls
+// @example: "@{dir-theme}images/yourimage.jpg"
+@dir-theme: "../"; // Theme
+@dir-images: "@{dir-theme}images/"; // Images
+@dir-fonts: "@{dir-theme}fonts/"; // Images
+
+// ==========================================================================
+// Media queries breakpoints
+// ==========================================================================
+
+// Extra small screen / phone (portrait)
+@screen-xs:                  320px;
+
+// Small screen / phone (landscape)
+@screen-sm:                  480px;
+
+// Small screen / tablet
+@screen-md:                  768px;
+
+// Large screen / desktop
+@screen-lg:                  1080px;
+
+// Extra Large screen / wide desktop
+@screen-xl:                  1296px;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max:              (@screen-sm - 1);
+@screen-sm-max:              (@screen-md - 1);
+@screen-md-max:              (@screen-lg - 1);
+@screen-lg-max:              (@screen-xl - 1);
+
+// ==========================================================================
+// Media Queries
+// ==========================================================================
+
+@xs: ~"(min-width: 0px) and (max-width: @{screen-xs-max})";
+@sm: ~"(min-width: 0px) and (max-width: @{screen-sm-max})";
+@md: ~"(min-width: @{screen-md}) and (max-width: @{screen-md-max})";
+@lg: ~"(min-width: @{screen-lg}) and (max-width: @{screen-lg-max})";
+@xl: ~"(min-width: @{screen-xl})";
+@not-lg: ~"(min-width: 0px) and (max-width: @{screen-md-max})";
+@hi-dpi: ~"(-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx)";

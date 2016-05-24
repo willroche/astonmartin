@@ -1,0 +1,90 @@
+// ==========================================================================
+// Header styles
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+
+// Header
+// ==========================================================================
+
+.header {
+	position: relative;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+}
+
+.header-gradient {
+	width: 100%;
+	height: 150px;
+	position: absolute;
+	top: 0;
+	z-index: 9;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+0,000000+0,ffffff+100&1+2,0+100 */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwMDAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjIlIiBzdG9wLWNvbG9yPSIjMDUwNTA1IiBzdG9wLW9wYWNpdHk9IjEiLz4KICAgIDxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+	background: -moz-linear-gradient(top,  rgba(0,0,0,1) 0%, rgba(5,5,5,1) 2%, rgba(255,255,255,0) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  rgba(0,0,0,1) 0%,rgba(5,5,5,1) 2%,rgba(255,255,255,0) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  rgba(0,0,0,1) 0%,rgba(5,5,5,1) 2%,rgba(255,255,255,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00ffffff',GradientType=0 ); /* IE6-8 */
+	.transition( all, 0.3s, ease-out );
+	.sticky & {
+		height: 75px;
+	}
+}
+
+.main-menu {
+	position: relative;
+	z-index: 10;
+	padding-top: 40px;
+	.transition( all, 0.3s, ease-out );
+	.sticky & {
+		padding-top: 20px;
+	}
+	@media @sm {
+		padding-top: 20px;
+	}
+}
+
+.logo {
+	.bg-hi-dpi( transparent, '@{dir-images}logo.png', 0%, 0%, no-repeat, 150px, 79px);
+	width: 150px;
+	height: 79px;
+	display: inline-block;
+	.transition( all, 0.3s, ease-out );
+	@media @sm {
+		.bg-hi-dpi( transparent, '@{dir-images}logo-sticky.png', 0%, 0%, no-repeat, 90px, 47px);
+		width: 90px;
+		height: 47px;
+	}
+	.sticky & {
+		.bg-hi-dpi( transparent, '@{dir-images}logo-sticky.png', 0%, 0%, no-repeat, 90px, 47px);
+		width: 90px;
+		height: 47px;
+	}
+}
+
+.i-search {
+	.bg-hi-dpi( transparent, '@{dir-images}i-search.png', 0%, 0%, no-repeat, 22px, 22px);
+	width: 22px;
+	height: 22px;
+	display: block;
+	float: left;
+	cursor: pointer;
+}
+
+.i-menu-close, .i-search-close {
+	.bg-hi-dpi( transparent, '@{dir-images}i-search-close.png', 0%, 0%, no-repeat, 22px, 22px);
+	width: 22px;
+	height: 22px;
+	display: block;
+	cursor: pointer;
+}
+
+// END OF SCOPE
+}

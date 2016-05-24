@@ -1,0 +1,12 @@
+aston_martin.narrow:
+  label: narrow
+  mediaQuery: 'all and (min-width: 560px) and (max-width: 850px)'
+  weight: 1
+  multipliers:
+    - 1x
+aston_martin.mobile:
+  label: mobile
+  mediaQuery: 'all and (max-width: 560px)'
+  weight: 1
+  multipliers:
+    - 1x

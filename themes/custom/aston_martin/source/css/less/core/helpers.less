@@ -1,0 +1,140 @@
+// ==========================================================================
+// Adaptive Helper classes
+// ==========================================================================
+
+& {
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+.h-left { float: left; }
+.h-right { float: right; }
+
+.h-list-reset {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+.h-hide-js {
+	display: none;
+
+	.no-js & {
+		display: block;
+	}
+}
+
+.h-rel {
+	position: relative;
+}
+
+// If you require vertically centered content (you will need a height on the holder)
+// ==========================================================================
+//<div class="h-centered-holder *a class that sets height*">
+//	<div class="h-centered-content">
+//		Content
+//	</div>
+//</div>
+.h-centered-holder {
+	display: table;
+	.h-centered-content {
+		position: relative;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+@media @xs {
+	.h-visible-xs { display: inherit !important; }
+	.h-visible-sm { display: none !important; }
+	.h-visible-md { display: none !important; }
+	.h-visible-lg { display: none !important; }
+	.h-visible-xl { display: none !important; }
+
+	.h-hidden-xs  { display: none !important; }
+	.h-hidden-sm  {  }
+	.h-hidden-md  {  }
+	.h-hidden-lg  {  }
+	.h-hidden-xl  {  }
+}
+
+// Small
+// ==========================================================================
+@media @sm {
+	.h-visible-xs { display: none !important; }
+	.h-visible-sm { display: inherit !important; }
+	.h-visible-md { display: none !important; }
+	.h-visible-lg { display: none !important; }
+	.h-visible-xl { display: none !important; }
+
+	.h-hidden-xs  {  }
+	.h-hidden-sm  { display: none !important; }
+	.h-hidden-md  {  }
+	.h-hidden-lg  {  }
+	.h-hidden-xl  {  }
+}
+
+// Medium
+// ==========================================================================
+@media @md {
+	.h-visible-xs { display: none !important; }
+	.h-visible-sm { display: none !important; }
+	.h-visible-md { display: inherit !important; }
+	.h-visible-lg { display: none !important; }
+	.h-visible-xl { display: none !important; }
+
+	.h-hidden-xs  {  }
+	.h-hidden-sm  {  }
+	.h-hidden-md  { display: none !important; }
+	.h-hidden-lg  {  }
+	.h-hidden-xl  {  }
+}
+
+// Large
+// ==========================================================================
+@media @lg {
+	.h-visible-xs { display: none !important; }
+	.h-visible-sm { display: none !important; }
+	.h-visible-md { display: none !important; }
+	.h-visible-lg { display: inherit !important; }
+	.h-visible-xl { display: none !important; }
+
+	.h-hidden-xs  {  }
+	.h-hidden-sm  {  }
+	.h-hidden-md  {  }
+	.h-hidden-lg  { display: none !important; }
+	.h-hidden-xl  {  }
+}
+
+// Extra large
+// ==========================================================================
+@media @xl {
+	.h-visible-xs { display: none !important; }
+	.h-visible-sm { display: none !important; }
+	.h-visible-md { display: none !important; }
+	.h-visible-lg { display: none !important; }
+	.h-visible-xl { display: inherit !important; }
+
+	.h-hidden-xs  {  }
+	.h-hidden-sm  {  }
+	.h-hidden-md  {  }
+	.h-hidden-lg  {  }
+	.h-hidden-xl  { display: none !important; }
+}
+
+.ie8 {
+
+	.h-visible-xs,
+	.h-visible-sm,
+	.h-visible-md,
+	.h-hidden-lg,
+	.h-hidden-xl { display: none !important; }
+
+	.h-hidden-xs,
+	.h-hidden-sm,
+	.h-hidden-md,
+	.h-visible-lg,
+	.h-visible-xl { display: block !important; }
+
+}
+
+}
