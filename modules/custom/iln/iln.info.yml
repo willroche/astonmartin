@@ -1,0 +1,5 @@
+name: ILN
+type: module
+description: Customisations
+core: 8.x
+package: Custom

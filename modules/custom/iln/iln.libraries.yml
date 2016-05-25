@@ -1,0 +1,4 @@
+b-lazy:
+  version: 1.x
+  js:
+    js/cuddly-slider.js: {}
