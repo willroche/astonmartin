@@ -49,6 +49,7 @@ body {
 	font-weight: 400;
 	letter-spacing: -0.5px;
 	text-transform: uppercase;
+	margin: 0 0 15px 0;
 	@media @md {
 		font-size: 34px;
 	}
@@ -86,6 +87,15 @@ body {
 }
 
 .p( ... ) {
+	font-size: 19px;
+	line-height: 34px;
+	font-family: @miller;
+	font-weight: normal;
+	margin: 0 0 20px 0;
+	@media @sm {
+		font-size: 17px;
+		line-height: 28px;
+	}
 }
 
 a {
@@ -208,6 +218,12 @@ blockquote {
 	h4 {
 		.h4();
 		margin: 22px 0px 34px 0px;
+		@media @sm {
+			.contact-hero & {
+				font-size: 22px;
+				margin: 22px 0px 24px 0px;
+			}
+		}
 	}
 }
 
@@ -241,9 +257,12 @@ blockquote {
 			.h3();
 			text-transform: uppercase;
 			margin: 27px 0 12px 0;
-			color: @font-light;
-			.transition( all, 0.3s, ease-out );
+			color: @font-dark;
 			line-height: 32px;
+			.transition( all, 0.3s, ease-out );
+			.t-light & {
+				color: @font-light;
+			}
 			@media @sm {
 				font-size: 24px;
 			}
@@ -254,25 +273,67 @@ blockquote {
 			font-family: @lato;
 			margin: 0;
 			letter-spacing: 1.3px;
-			color: @font-light;
+			color: @font-dark;
 			display: inline-block;
 			padding-top: 7px;
-			.transition( all, 0.3s, ease-out );
-			border-top: 2px solid @bg-light;
+			border-top: 2px solid @bg-dark;
 			text-transform: uppercase;
+			.transition( all, 0.3s, ease-out );
+			.t-light & {
+				color: @font-light;
+				border-top: 2px solid @bg-light;
+			}
 			@media @sm {
 				font-size: 18px;
 			}
+		}
+		p {
+			font-family: @miller;
+			font-style: italic;
+			color: @font-dark;
+			font-size: 16px;
+			margin: 0 0 18px 0;
+			.transition( all, 0.3s, ease-out );
 		}
 		img {
 			display: block;
 		}
 		&:hover {
-			h3, h5 {
-				color: rgba(255, 255, 255, 0.6);
-				border-color: rgba(255, 255, 255, 0.6);
+			h3, h5, p {
+				color: rgba(0, 0, 0, 0.6);
+				border-color: rgba(0, 0, 0, 0.6);
+				.t-light & {
+					color: rgba(255, 255, 255, 0.6);
+					border-color: rgba(255, 255, 255, 0.6);
+				}
 			}
 		}
+	}
+}
+
+.t-category {
+	h4 {
+		.h4();
+		font-size: 20px;
+		line-height: 26px;
+		text-transform: uppercase;
+		margin: 10px 0 10px 0;
+		a {
+			&:hover {
+				color: rgba(255, 255, 255, 0.6);
+			}
+		}
+		@media @sm {
+			margin: 15px 0 15px 0;
+		}
+	}
+}
+
+.t-content {
+	h4 {
+		.h4();
+		text-transform: uppercase;
+		margin: 50px 0 20px 0;
 	}
 }
 
@@ -285,7 +346,7 @@ blockquote {
 // White text
 // ==========================================================================
 .t-light {
-	h1, h2, h3, h4, p {
+	h1, h2, h3, h4, p, a {
 		color: @font-light;
 	}
 }

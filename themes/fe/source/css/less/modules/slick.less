@@ -12,18 +12,34 @@
 
 .hero-slick {
 	.slick-dots {
-		bottom: 0;
+		bottom: 50px;
+		@media @md {
+			bottom: 15px;
+		}
+		@media @sm {
+			bottom: 15px;
+		}
 		li {
 			width: 73px;
-		}
-		button {
-			width: 73px;
 			height: 10px;
-			&:before {
-				content: '';
-				height: 10px;
+			button {
 				width: 73px;
-				background: black;
+				height: 10px;
+				&:before {
+					content: '';
+					height: 10px;
+					width: 73px;
+					background: rgba(255, 255, 255, 0.3);
+					opacity: 1;
+				}
+			}
+			&.slick-active {
+				button {
+					&:before {
+						background: rgba(255, 255, 255, 0.8);
+						opacity: 1;
+					}
+				}
 			}
 		}
 	}

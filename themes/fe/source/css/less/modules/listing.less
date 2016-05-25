@@ -13,6 +13,9 @@
 // ==========================================================================
 .listing {
 	margin-bottom: 75px;
+	.slice-article-holder & {
+		margin-bottom: 35px;
+	}
 	@media @md {
 		margin-bottom: 55px;
 	}
@@ -22,6 +25,28 @@
 	img {
 		@media @sm {
 			margin: 0 auto;
+		}
+	}
+}
+
+.category-holder {
+	display: table;
+	@media @md {
+		display: block;
+	}
+	@media @sm {
+		display: block;
+	}
+	.category {
+		display: table-cell;
+		@media @md {
+			display: block;
+			float: left;
+			width: 25%;
+		}
+		@media @sm {
+			display: block;
+			width: 100%;
 		}
 	}
 }

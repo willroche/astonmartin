@@ -25,6 +25,29 @@
 	@media @sm {
 		height: 550px;
 	}
+	&.contact-hero {
+		@media @sm {
+			height: 400px;
+			background-position: 20% 50%;
+			.home-hero-content {
+				bottom: 0;
+			}
+		}
+	}
+	&.terms-hero {
+		@media @md {
+			height: 465px;
+		}
+		.home-hero-content {
+			bottom: 42%;
+			@media @md {
+				bottom: 35%;
+			}
+			@media @sm {
+				bottom: 30%;
+			}
+		}
+	}
 	.home-hero-content {
 		position: absolute;
 		width: 100%;

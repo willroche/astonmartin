@@ -20,7 +20,8 @@ $(function() {
 
 	$(".hero-slick").slick({
     	dots: true,
-    	autoplay: true,
+    	arrows: false,
+    	// autoplay: true,
     	infinite: false,
     	slidesToShow: 1,
     	slidesToScroll: 1
@@ -40,6 +41,8 @@ $(function() {
 		$("#menu").fadeToggle(300);
 		$("body").toggleClass("no-scroll");
 	});
+
+	$(".listing:nth-child(3n+3)").after( '<div class="h-clearfix"></div>' );
 
 
 });
