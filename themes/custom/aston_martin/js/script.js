@@ -17,3 +17,9 @@ jQuery(function() {
 		jQuery("body").toggleClass("no-scroll");
 	});
 });
+
+WebFont.load({
+   google: {
+     families: ['Lato:400,300,700']
+   }
+ });
