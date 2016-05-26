@@ -330,10 +330,84 @@ blockquote {
 }
 
 .t-content {
+	h1 {
+		.h1();
+		margin: 0 0 35px 0;
+	}
+	h3 {
+		.h3();
+		font-family: @miller;
+		font-size: 26px;
+		margin: 0;
+		font-style: italic;
+		margin: 0 0 30px 0;
+	}
 	h4 {
 		.h4();
 		text-transform: uppercase;
 		margin: 50px 0 20px 0;
+	}
+	h5 {
+		.h5();
+		font-family: @lato;
+		text-transform: uppercase;
+		margin: 0 0 30px 0;
+		line-height: 36px;
+	}
+	p {
+		&.caption {
+			font-size: 17px;
+			line-height: 25px;
+			font-family: @lato;
+			margin: 10px 0 30px 0;
+		}
+	}
+	.image {
+		display: inline-block;
+		@media @md {
+			display: block;
+		}
+		&.left {
+			float: left;
+			margin: 0 20px 10px 0;
+			@media @md {
+				float: none;
+				margin: 0 0 20px 0;
+			}
+			@media @sm {
+				float: none;
+				margin: 0 0 20px 0;
+			}
+		}
+		&.right {
+			float: right;
+			margin: 0 0 10px 20px;
+			@media @md {
+				float: none;
+				margin: 0 0 20px 0;
+			}
+			@media @sm {
+				float: none;
+				margin: 0 0 20px 0;
+			}
+		}
+		.testi {
+			width: 100%;
+		}
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.t-share {
+	h4 {
+		.h4();
+		font-size: 24px;
+		font-weight: 100;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		margin: 10px 0 0 0;
 	}
 }
 

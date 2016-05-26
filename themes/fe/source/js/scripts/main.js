@@ -44,5 +44,12 @@ $(function() {
 
 	$(".listing:nth-child(3n+3)").after( '<div class="h-clearfix"></div>' );
 
+	$(".video-adapt").fitVids();
+
+	$("#share").jsSocials({
+		showLabel: false,
+    	showCount: false,
+        shares: ["facebook", "twitter", "linkedin", "googleplus"]
+    });
 
 });
