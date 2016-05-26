@@ -20,7 +20,8 @@ $(function() {
 
 	$(".hero-slick").slick({
     	dots: true,
-    	autoplay: true,
+    	arrows: false,
+    	// autoplay: true,
     	infinite: false,
     	slidesToShow: 1,
     	slidesToScroll: 1
@@ -41,5 +42,14 @@ $(function() {
 		$("body").toggleClass("no-scroll");
 	});
 
+	$(".listing:nth-child(3n+3)").after( '<div class="h-clearfix"></div>' );
+
+	$(".video-adapt").fitVids();
+
+	$("#share").jsSocials({
+		showLabel: false,
+    	showCount: false,
+        shares: ["facebook", "twitter", "linkedin", "googleplus"]
+    });
 
 });

@@ -4,6 +4,15 @@ global-styling:
     base:
       source/css/style.css: {}
 
+js-socials:
+  version: 1.6.2
+  css:
+    theme:
+      js/jssocials.css: {}
+      js/jssocials-theme-flat.css: {}
+  js:
+    js/jssocials.min.js: {}
+
 b-lazy:
   version: 1.6.2
   js:
@@ -23,7 +32,7 @@ slick-slideshow:
     http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js: { type: external, minified: true }
   dependencies:
     - core/jquery
-    
+
 js-files:
   version: 1.x
   js:
