@@ -7,6 +7,15 @@ jQuery(window).scroll(function() {
 });
 
 jQuery(function() {
+	jQuery(".hero-slick").slick({
+			dots: true,
+			arrows: false,
+			// autoplay: true,
+			infinite: false,
+			slidesToShow: 1,
+			slidesToScroll: 1
+	});
+
 	jQuery(".i-search, .i-search-close").click(function() {
 		jQuery("#search").fadeToggle(300);
 		jQuery("body").toggleClass("no-scroll");
@@ -23,3 +32,11 @@ WebFont.load({
      families: ['Lato:400,300,700']
    }
  });
+
+ // Init BLazy for lazy loading
+ ;(function() {
+ 	// Initialize
+ 	var bLazy = new Blazy({
+ 		loadInvisible: true
+ 	});
+ })();

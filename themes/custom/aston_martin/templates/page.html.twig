@@ -123,6 +123,14 @@
   </div>
 </div>
 
+{% if page.footer_top %}
+	<div class="l-col-12 l-content clearfix">
+		<div class="l-col-12 l-padding">
+		{{ page.footer_top }}
+		</div>
+	</div>
+{% endif %}
+
 <footer class="site-footer">
   <div class="slice slice-footer h-clearfix">
     {% if page.footer_left or page.footer_middle or page.footer_right %}
