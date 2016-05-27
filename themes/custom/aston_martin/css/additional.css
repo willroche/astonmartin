@@ -1,0 +1,26 @@
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.slice-category {
+  background-color: #000;
+}
+
+.l-col-4 {
+  position: relative;
+}
+
+h3.block-title {
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'lato',Arial,sans-serif;
+  font-weight: 100;
+  letter-spacing: 2px;
+}
+
+.category-holder {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

@@ -3,6 +3,7 @@ global-styling:
   css:
     base:
       source/css/style.css: {}
+      css/additional.css: {}
 
 js-socials:
   version: 1.6.2
@@ -32,6 +33,12 @@ slick-slideshow:
     http://cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js: { type: external, minified: true }
   dependencies:
     - core/jquery
+
+font-awesome:
+  version: 4.6.0
+  css:
+    theme:
+      font-awesome/css/font-awesome.min.css: {}
 
 js-files:
   version: 1.x

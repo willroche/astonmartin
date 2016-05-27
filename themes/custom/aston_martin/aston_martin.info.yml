@@ -8,6 +8,7 @@ libraries:
   - aston_martin/b-lazy
   - aston_martin/js-files
   - aston_martin/slick-slideshow
+  - aston_martin/font-awesome
   - aston_martin/js-socials
 
 base theme: false
