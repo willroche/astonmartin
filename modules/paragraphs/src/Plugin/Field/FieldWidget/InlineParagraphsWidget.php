@@ -238,6 +238,11 @@ class InlineParagraphsWidget extends WidgetBase {
       else {
         // Add translation if missing for the target language.
         if (!$paragraphs_entity->hasTranslation($langcode)) {
+          // Get the selected translation of the paragraph entity.
+          $entity_langcode = $paragraphs_entity->language()->getId();
+          $source = $form_state->get(['content_translation', 'source']);
+          $source_langcode = $source ? $source->getId() : $entity_langcode;
+          $paragraphs_entity = $paragraphs_entity->getTranslation($source_langcode);
           // Initialise the translation with source language values.
           $paragraphs_entity->addTranslation($langcode, $paragraphs_entity->toArray());
           $translation = $paragraphs_entity->getTranslation($langcode);
@@ -309,7 +314,6 @@ class InlineParagraphsWidget extends WidgetBase {
               '#name' => strtr($id_prefix, '-', '_') . '_collapse',
               '#weight' => 499,
               '#submit' => array(array(get_class($this), 'collapseItemSubmit')),
-              '#limit_validation_errors' => array(array_merge($parents, array($field_name, 'add_more'))),
               '#delta' => $delta,
               '#ajax' => array(
                 'callback' => array(get_class($this), 'itemAjax'),
@@ -581,36 +585,29 @@ class InlineParagraphsWidget extends WidgetBase {
     $target_type = $this->getFieldSetting('target_type');
     $bundles = $entity_manager->getBundleInfo($target_type);
 
+    if ($this->getSelectionHandlerSetting('target_bundles') !== NULL) {
+      $bundles = array_intersect_key($bundles, $this->getSelectionHandlerSetting('target_bundles'));
+    }
 
     // Support for the paragraphs reference type.
-    $dragdrop_settings = $this->getSelectionHandlerSetting('target_bundles_drag_drop');
-    if ($dragdrop_settings) {
-      $drag_drop_settings = $this->getSelectionHandlerSetting('target_bundles_drag_drop');
-      $enable_count = 0;
+    $drag_drop_settings = $this->getSelectionHandlerSetting('target_bundles_drag_drop');
+    if ($drag_drop_settings) {
       $max_weight = count($bundles);
 
-      // Check how much types are enabled as none enabled = all enabled.
-      foreach($drag_drop_settings as $bundle_info) {
-        if (isset($bundle_info['enabled']) && $bundle_info['enabled']) {
-          $enable_count++;
-        }
+      foreach ($drag_drop_settings as $bundle_info) {
         if (isset($bundle_info['weight']) && $bundle_info['weight'] && $bundle_info['weight'] > $max_weight) {
           $max_weight = $bundle_info['weight'];
         }
       }
 
-
       // Default weight for new items.
       $weight = $max_weight + 1;
       foreach ($bundles as $machine_name => $bundle) {
-
-        if ((isset($drag_drop_settings[$machine_name]['enabled']) && $drag_drop_settings[$machine_name]['enabled']) || $enable_count === 0) {
-          $return_bundles[$machine_name] = array(
-            'label' => $bundle['label'],
-            'weight' => isset($drag_drop_settings[$machine_name]['weight']) ? $drag_drop_settings[$machine_name]['weight'] : $weight,
-          );
-          $weight++;
-        }
+        $return_bundles[$machine_name] = array(
+          'label' => $bundle['label'],
+          'weight' => isset($drag_drop_settings[$machine_name]['weight']) ? $drag_drop_settings[$machine_name]['weight'] : $weight,
+        );
+        $weight++;
       }
     }
     // Support for other reference types.
@@ -739,8 +736,7 @@ class InlineParagraphsWidget extends WidgetBase {
     } else {
 
       // @todo: properize this.
-      $add_text = 'No @title_multiple have been added yet. Select a @title type and press the button below to add one.';
-      $element_text = '<p><em>' . t($add_text, array('@title_multiple' => $this->getSetting('title_plural'), '@title' => $this->getSetting('title'))) . '</em></p>';
+      $element_text = '<p><em>' . t('No @title added yet.', ['@title' => $this->getSetting('title')]) . '</em></p>';
       $element_text .= $description ? '<div class="description">' . $description . '</div>' : '';
 
       $elements += array(
@@ -1076,7 +1072,7 @@ class InlineParagraphsWidget extends WidgetBase {
       /** @var \Drupal\Core\Entity\Display\EntityFormDisplayInterface $display */
       $display = $widget_state['paragraphs'][$delta]['display'];
 
-      if ($widget_state['paragraphs'][$delta]['mode'] != 'remove' && $widget_state['paragraphs'][$delta]['mode'] != 'removed') {
+      if ($widget_state['paragraphs'][$delta]['mode'] == 'edit') {
         // Extract the form values on submit for getting the current paragraph.
         $display->extractFormValues($entity, $element['subform'], $form_state);
         $display->validateFormValues($entity, $element['subform'], $form_state);

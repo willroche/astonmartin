@@ -4,6 +4,13 @@ description: The Aston Martin theme
 package: Other
 core: 8.x
 libraries:
+  - classy/base
+  - classy/user
+  - classy/dropbutton
+  - classy/dialog
+  - classy/file
+  - classy/progress
+  - core/normalize
   - aston_martin/global-styling
   - aston_martin/b-lazy
   - aston_martin/js-files

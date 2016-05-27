@@ -114,12 +114,14 @@
 {% endif %}
 <div id="main-wrapper" class="l-col-12 l-content">
   <div id="main" class="layout-main clearfix">
+		{% if page.content %}
     <main id="content" class="column main-content" role="main">
       <section class="section">
         <a id="main-content" tabindex="-1"></a>
         {{ page.content }}
       </section>
     </main>
+		{% endif %}
   </div>
 </div>
 

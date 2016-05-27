@@ -7,8 +7,8 @@ package: Field types
 test_dependencies:
   - diff
 
-# Information added by Drupal.org packaging script on 2016-05-13
-version: '8.x-1.0-rc6+7-dev'
+# Information added by Drupal.org packaging script on 2016-05-26
+version: '8.x-1.0-rc6+8-dev'
 core: '8.x'
 project: 'entity_reference_revisions'
-datestamp: 1463124841
+datestamp: 1464221340

@@ -24,3 +24,37 @@ h3.block-title {
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
+#content {
+  margin-top: 150px;
+}
+
+.path-taxonomy #content, .path-frontpage #content, .page-node-type-article #content {
+  margin-top: 20px;
+}
+
+a {
+  color: #444;
+}
+
+a:hover {
+  color: #666;
+}
+
+ul.tabs {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+ul.tabs a {
+  color: #fff;
+  background: #555;
+  text-transform: uppercase;
+  padding: 4px 8px 6px;
+  border-radius: 2px;
+  font-weight: 100;
+}
+
+ul.tabs a.is-active, ul.tabs a:hover {
+  background-color: #000;
+}
