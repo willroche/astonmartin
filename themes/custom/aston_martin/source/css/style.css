@@ -3403,6 +3403,9 @@ footer .copyright .copyright-content {
   width: 100%;
   text-align: center;
 }
+.views-row .box-holder {
+  position: relative;
+}
 .box-holder.top {
   top: 0;
 }
@@ -3417,6 +3420,15 @@ footer .copyright .copyright-content {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+.views-row .box-holder .box-label {
+  font-size: 16px;
+  font-family: 'lato', Arial, sans-serif;
+  font-weight: 400;
+  background: #000000;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 .box-holder .box-content {
   background-color: rgba(255, 255, 255, 0.5);
