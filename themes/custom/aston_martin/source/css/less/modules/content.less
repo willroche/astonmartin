@@ -1,0 +1,44 @@
+// ==========================================================================
+// Content styles for body copy from wysiwyg
+// ==========================================================================
+
+
+& {
+
+@import (multiple, less) "vars.less";
+@import (multiple, less) "less-helpers/less/mixins.less";
+
+.align-left {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	display: table;
+	@media @sm {
+		margin-right: 0;
+	}
+}
+
+.align-right {
+	margin-left: 10px;
+	margin-bottom: 10px;
+	display: table;
+	@media @sm {
+		margin-left: 0;
+	}
+}
+
+figcaption {
+	display:table-caption;
+	caption-side:bottom;
+	margin-top: 10px;
+	font-size: 16px;
+}
+
+.media {
+	margin: 10px 0 20px 0;
+}
+
+.video-embed-field-responsive-video {
+	margin: 10px 0 20px 0;
+}
+
+}
