@@ -7,8 +7,8 @@ package: Testing
 dependencies:
   - views
 
-# Information added by Drupal.org packaging script on 2016-05-18
-version: '8.x-1.0-alpha3+1-dev'
+# Information added by Drupal.org packaging script on 2016-05-31
+version: '8.x-1.0-alpha3+3-dev'
 core: '8.x'
 project: 'pathauto'
-datestamp: 1463552054
+datestamp: 1464732254
