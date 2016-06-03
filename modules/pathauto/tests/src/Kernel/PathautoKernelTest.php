@@ -165,6 +165,29 @@ class PathautoKernelTest extends KernelTestBase {
   }
 
   /**
+   * Test potential conflicts with the same alias in different languages.
+   */
+  public function testSameTitleDifferentLanguages() {
+    // Create two English articles with the same title.
+    $edit = [
+      'title' => 'Sample page',
+      'type' => 'page',
+      'langcode' => 'en',
+    ];
+    $node1 = $this->drupalCreateNode($edit);
+    $this->assertEntityAlias($node1, '/content/sample-page', 'en');
+
+    $node2 = $this->drupalCreateNode($edit);
+    $this->assertEntityAlias($node2, '/content/sample-page-0', 'en');
+
+    // Now, create a French article with the same title, and verify that it gets
+    // the basic alias with the correct langcode.
+    $edit['langcode'] = 'fr';
+    $node3 = $this->drupalCreateNode($edit);
+    $this->assertEntityAlias($node3, '/content/sample-page', 'fr');
+  }
+
+  /**
    * Test pathauto_cleanstring().
    */
   public function testCleanString() {
@@ -269,7 +292,7 @@ class PathautoKernelTest extends KernelTestBase {
     $node->setTitle('Third title');
     $node->save();
     $this->assertEntityAlias($node, '/content/third-title');
-    $this->assertAliasExists(array('source' => '/' . $node->urlInfo()->getInternalPath(), 'alias' => '/content/second-title'));
+    $this->assertAliasExists(array('source' => '/' . $node->toUrl()->getInternalPath(), 'alias' => '/content/second-title'));
 
     $config->set('update_action', PathautoGeneratorInterface::UPDATE_ACTION_DELETE);
     $config->save();
@@ -278,7 +301,7 @@ class PathautoKernelTest extends KernelTestBase {
     $this->assertEntityAlias($node, '/content/fourth-title');
     $this->assertNoAliasExists(array('alias' => '/content/third-title'));
     // The older second alias is not deleted yet.
-    $older_path = $this->assertAliasExists(array('source' => '/' . $node->urlInfo()->getInternalPath(), 'alias' => '/content/second-title'));
+    $older_path = $this->assertAliasExists(array('source' => '/' . $node->toUrl()->getInternalPath(), 'alias' => '/content/second-title'));
     \Drupal::service('path.alias_storage')->delete($older_path);
 
     $config->set('update_action', PathautoGeneratorInterface::UPDATE_ACTION_NO_NEW);

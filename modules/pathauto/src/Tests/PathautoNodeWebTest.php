@@ -87,7 +87,7 @@ class PathautoNodeWebTest extends WebTestBase {
       'path[0][pathauto]' => FALSE,
       'path[0][alias]' => $manual_alias,
     );
-    $this->drupalPostForm($node->urlInfo('edit-form'), $edit, t('Save and keep published'));
+    $this->drupalPostForm($node->toUrl('edit-form'), $edit, t('Save and keep published'));
     $this->assertRaw(t('@type %title has been updated.', array('@type' => 'page', '%title' => $title)));
 
     // Check that the automatic alias checkbox is now unchecked by default.
@@ -139,7 +139,7 @@ class PathautoNodeWebTest extends WebTestBase {
     $node = $this->drupalGetNodeByTitle($edit['title']);
 
     // Pathauto checkbox should still not exist.
-    $this->drupalGet($node->urlInfo('edit-form'));
+    $this->drupalGet($node->toUrl('edit-form'));
     $this->assertNoFieldById('edit-path-0-pathauto');
     $this->assertFieldByName('path[0][alias]', '');
     $this->assertNoEntityAlias($node);
@@ -283,30 +283,6 @@ class PathautoNodeWebTest extends WebTestBase {
     $this->assertAliasExists(['alias' => '/sample-article-api']);
     $this->drupalGet('sample-article-api');
     $this->assertResponse(200);
-  }
-
-  /**
-   * Tests that patterns can coexist with routes with arguments.
-   *
-   * A common case is to have a view with a term name as a contextual filter,
-   * and a pattern that matches the view's path.
-   */
-  public function testPatternMatchingDynamicRoute() {
-    $this->drupalLogin($this->rootUser);
-
-    // Create a pattern for nodes that matches with a view path defined at
-    // pathauto_views_test module.
-    $this->createPattern('node', '/articles/[node:title]', -1);
-
-    // Create an article.
-    $edit = array(
-      'title[0][value]' => 'Sample article',
-    );
-    $this->drupalPostForm('node/add/article', $edit, t('Save and publish'));
-
-    // Check that the alias was not created and an alert was shown.
-    $this->assertText('collides with the route with identifier');
-    $this->assertNoAliasExists(array('alias' => '/articles/sample-article'));
   }
 
 }

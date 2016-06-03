@@ -88,7 +88,7 @@ trait PathautoTestHelperTrait {
     if (!$langcode) {
       $langcode = $entity->language()->getId();
     }
-    return $this->saveAlias('/' . $entity->urlInfo()->getInternalPath(), $alias, $langcode);
+    return $this->saveAlias('/' . $entity->toUrl()->getInternalPath(), $alias, $langcode);
   }
 
   public function assertEntityAlias(EntityInterface $entity, $expected_alias, $langcode = NULL) {
@@ -96,11 +96,11 @@ trait PathautoTestHelperTrait {
     if (!$langcode) {
       $langcode = $entity->language()->getId();
     }
-    $this->assertAlias('/' . $entity->urlInfo()->getInternalPath(), $expected_alias, $langcode);
+    $this->assertAlias('/' . $entity->toUrl()->getInternalPath(), $expected_alias, $langcode);
   }
 
   public function assertEntityAliasExists(EntityInterface $entity) {
-    return $this->assertAliasExists(array('source' => '/' . $entity->urlInfo()->getInternalPath()));
+    return $this->assertAliasExists(array('source' => '/' . $entity->toUrl()->getInternalPath()));
   }
 
   public function assertNoEntityAlias(EntityInterface $entity, $langcode = NULL) {
@@ -108,11 +108,11 @@ trait PathautoTestHelperTrait {
     if (!$langcode) {
       $langcode = $entity->language()->getId();
     }
-    $this->assertEntityAlias($entity, '/' . $entity->urlInfo()->getInternalPath(), $langcode);
+    $this->assertEntityAlias($entity, '/' . $entity->toUrl()->getInternalPath(), $langcode);
   }
 
   public function assertNoEntityAliasExists(EntityInterface $entity, $alias = NULL) {
-    $path = array('source' => '/' . $entity->urlInfo()->getInternalPath());
+    $path = array('source' => '/' . $entity->toUrl()->getInternalPath());
     if (!empty($alias)) {
       $path['alias'] = $alias;
     }
