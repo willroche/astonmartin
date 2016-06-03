@@ -51,6 +51,37 @@
 			color: @font-dark;
 		}
 	}
+	&.pagination {
+		background: @bg-dark;
+		color: @font-light;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		font-size: 18px;
+		font-family: @lato;
+		text-transform: uppercase;
+		letter-spacing: 4px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		position: relative;
+		.transition( all, 0.3s, ease-out );
+		&.prev {
+			span {
+				left: 10px;
+			}
+		}
+		&.next {
+			span {
+				right: 10px;
+			}
+		}
+		span {
+			position: absolute;
+		}
+		&:hover {
+			background: rgba(0, 0, 0, 0.8)
+		}
+	}
 }
 
 .button-nav {
