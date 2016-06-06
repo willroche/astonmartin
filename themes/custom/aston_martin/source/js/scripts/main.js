@@ -42,7 +42,7 @@ $(function() {
 		$("body").toggleClass("no-scroll");
 	});
 
-	$(".listing:nth-child(3n+3)").after( '<div class="h-clearfix"></div>' );
+	$(".listing:nth-child(4n+3)").after( '<div class="h-clearfix"></div>' );
 
 	$(".video-adapt").fitVids();
 

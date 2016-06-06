@@ -32,7 +32,7 @@ jQuery(function() {
 		jQuery("body").toggleClass("no-scroll");
 	});
 
-	jQuery(".listing:nth-child(4n+3)").after( '<div class="h-clearfix"></div>' );
+	jQuery(".listing:nth-child(4n+4)").after( '<div class="h-clearfix"></div>' );
 });
 
 WebFont.load({
