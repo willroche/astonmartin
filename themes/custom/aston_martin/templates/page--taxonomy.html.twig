@@ -112,7 +112,7 @@
     </aside>
   </div>
 {% endif %}
-<div class="slice slice-article-holder h-clearfix">
+<div class="slice h-clearfix">
 	<div class="l-col-12 l-content">
 		<div class="l-col-12 t-listing t-center">
 			{% if page.content %}
@@ -127,6 +127,9 @@
 	</div>
 </div>
 
+{% if page.taxonomy_bottom %}
+    {{ page.taxonomy_bottom }}
+{% endif %}
 {% if page.footer_top %}
 		{{ page.footer_top }}
 {% endif %}
