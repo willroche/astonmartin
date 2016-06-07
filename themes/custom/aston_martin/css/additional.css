@@ -20,13 +20,13 @@ h3.block-title {
   letter-spacing: 2px;
 }
 
-#content {
+/*#content {
   margin-top: 150px;
-}
+}*/
 
-.path-taxonomy #content, .path-frontpage #content, .page-node-type-article #content {
+/*.path-taxonomy #content, .path-frontpage #content, .page-node-type-article #content {
   margin-top: 20px;
-}
+}*/
 
 a {
   color: #444;

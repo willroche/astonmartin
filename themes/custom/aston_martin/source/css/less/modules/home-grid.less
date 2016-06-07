@@ -145,6 +145,9 @@
 	position: absolute;
 	width: 100%;
 	text-align: center;
+	.views-row & {
+		position: relative;
+	}
 	&.top {
 		top: 0;
 	}
@@ -155,6 +158,10 @@
 		display: inline-block;
 		padding: 7px 18px;
 		.transition( all, 0.3s, ease-out );
+		.views-row & {
+			background: @bg-dark;
+			color: @font-light;
+		}
 	}
 	.box-content {
 		background-color: rgba(255, 255, 255, 0.5);

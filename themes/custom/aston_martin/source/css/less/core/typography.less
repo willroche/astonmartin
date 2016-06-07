@@ -175,15 +175,12 @@ blockquote {
 		height: 100%;
 	}
 	.quote {
-		.bg-hi-dpi( transparent, '@{dir-images}quote-open.png', 50%, 50%, no-repeat, 22px, 22px);
+		.bg-hi-dpi( transparent, '@{dir-images}quote-open.png', 0%, 0%, no-repeat, 36px, 30px);
 		width: 36px;
-		height: 60px;
+		height: 30px;
 		display: inline-block;
-		border-bottom: 1px solid @bg-dark;
 		&.close {
-			border-top: 1px solid @bg-dark;
-			border-bottom: 0;
-			.bg-hi-dpi( transparent, '@{dir-images}quote-close.png', 50%, 50%, no-repeat, 22px, 22px);
+			.bg-hi-dpi( transparent, '@{dir-images}quote-close.png', 0%, 0%, no-repeat, 36px, 30px);
 		}
 	}
 }
@@ -396,6 +393,44 @@ blockquote {
 		}
 		img {
 			width: 100%;
+		}
+	}
+	ul {
+		.p();
+		text-align: left;
+	}
+	ol {
+		.p();
+		text-align: left;
+	}
+	blockquote {
+		margin: 25px 0;
+		p {
+			.p();
+			font-style: italic;
+			line-height: 52px;
+			font-size: 30px;
+			margin: 10px 0;
+			@media @sm {
+				font-size: 26px;
+				line-height: 34px;
+			}
+		}
+		&:before {
+			content: '';
+			.bg-hi-dpi( transparent, '@{dir-images}quote-open.png', 0%, 0%, no-repeat, 36px, 30px);
+			width: 36px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
+		}
+		&:after {
+			content: '';
+			.bg-hi-dpi( transparent, '@{dir-images}quote-close.png', 0%, 0%, no-repeat, 36px, 30px);
+			width: 36px;
+			height: 30px;
+			display: block;
+			margin: 0 auto;
 		}
 	}
 }

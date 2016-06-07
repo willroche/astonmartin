@@ -2055,27 +2055,24 @@ blockquote {
   height: 100%;
 }
 .quote-holder .quote {
-  background: transparent url("../images/quote-open.png") 50% 50% no-repeat;
+  background: transparent url("../images/quote-open.png") 0% 0% no-repeat;
   width: 36px;
-  height: 60px;
+  height: 30px;
   display: inline-block;
-  border-bottom: 1px solid #000000;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .quote-holder .quote {
-    background: transparent url("../images/quote-open@2x.png") 50% 50% no-repeat;
-    background-size: 22px 22px;
+    background: transparent url("../images/quote-open@2x.png") 0% 0% no-repeat;
+    background-size: 36px 30px;
   }
 }
 .quote-holder .quote.close {
-  border-top: 1px solid #000000;
-  border-bottom: 0;
-  background: transparent url("../images/quote-close.png") 50% 50% no-repeat;
+  background: transparent url("../images/quote-close.png") 0% 0% no-repeat;
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .quote-holder .quote.close {
-    background: transparent url("../images/quote-close@2x.png") 50% 50% no-repeat;
-    background-size: 22px 22px;
+    background: transparent url("../images/quote-close@2x.png") 0% 0% no-repeat;
+    background-size: 36px 30px;
   }
 }
 .masonary h4 {
@@ -2431,6 +2428,88 @@ blockquote {
 }
 .t-content .image img {
   width: 100%;
+}
+.t-content ul {
+  font-size: 19px;
+  line-height: 34px;
+  font-family: miller_displayroman, times, serif;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .t-content ul {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+.t-content ol {
+  font-size: 19px;
+  line-height: 34px;
+  font-family: miller_displayroman, times, serif;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  text-align: left;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .t-content ol {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+.t-content blockquote {
+  margin: 25px 0;
+}
+.t-content blockquote p {
+  font-size: 19px;
+  line-height: 34px;
+  font-family: miller_displayroman, times, serif;
+  font-weight: normal;
+  margin: 0 0 20px 0;
+  font-style: italic;
+  line-height: 52px;
+  font-size: 30px;
+  margin: 10px 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .t-content blockquote p {
+    font-size: 17px;
+    line-height: 28px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .t-content blockquote p {
+    font-size: 26px;
+    line-height: 34px;
+  }
+}
+.t-content blockquote:before {
+  content: '';
+  background: transparent url("../images/quote-open.png") 0% 0% no-repeat;
+  width: 36px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .t-content blockquote:before {
+    background: transparent url("../images/quote-open@2x.png") 0% 0% no-repeat;
+    background-size: 36px 30px;
+  }
+}
+.t-content blockquote:after {
+  content: '';
+  background: transparent url("../images/quote-close.png") 0% 0% no-repeat;
+  width: 36px;
+  height: 30px;
+  display: block;
+  margin: 0 auto;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .t-content blockquote:after {
+    background: transparent url("../images/quote-close@2x.png") 0% 0% no-repeat;
+    background-size: 36px 30px;
+  }
 }
 .t-share h4 {
   font-size: 26px;
@@ -3422,6 +3501,9 @@ footer .copyright .copyright-content {
   width: 100%;
   text-align: center;
 }
+.views-row .box-holder {
+  position: relative;
+}
 .box-holder.top {
   top: 0;
 }
@@ -3436,6 +3518,10 @@ footer .copyright .copyright-content {
   -ms-transition: all 0.3s ease-out;
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+.views-row .box-holder .box-label {
+  background: #000000;
+  color: #ffffff;
 }
 .box-holder .box-content {
   background-color: rgba(255, 255, 255, 0.5);
@@ -3935,8 +4021,48 @@ footer .copyright .copyright-content {
     margin: 10px 0;
   }
 }
+.search-results form {
+  margin-bottom: 80px;
+}
+.search-results .form-type-textfield {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  width: 50%;
+  margin-right: 20px;
+}
+.search-results .form-type-textfield input {
+  width: 100%;
+  height: 66px;
+  padding: 0 20px;
+  margin: 0;
+  line-height: 66px;
+}
+.search-results .form-actions {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+.search-results .form-actions .form-submit {
+  background: transparent url("../images/i-mag-search.png") 0% 0% no-repeat;
+  width: 66px;
+  height: 66px;
+  display: block;
+  margin: 0 !important;
+  border: 0;
+  color: transparent;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .search-results .form-actions .form-submit {
+    background: transparent url("../images/i-mag-search@2x.png") 0% 0% no-repeat;
+    background-size: 66px 66px;
+  }
+}
 .no-scroll {
   overflow: hidden;
+}
+.search-panel {
+  margin-bottom: 40px;
 }
 .search-holder {
   padding: 30px 0 70px 0;
@@ -4062,4 +4188,10 @@ figcaption {
 }
 .video-embed-field-responsive-video {
   margin: 10px 0 20px 0;
+}
+.views-row a img {
+  margin: 0 auto;
+}
+.path-user #main-wrapper {
+  margin-top: 200px;
 }
