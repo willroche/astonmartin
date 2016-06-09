@@ -10,10 +10,20 @@ jQuery(function() {
 	jQuery(".hero-slick").slick({
 			dots: true,
 			arrows: false,
-			// autoplay: true,
+			lazyLoad: 'ondemand',
 			infinite: false,
 			slidesToShow: 1,
 			slidesToScroll: 1
+	});
+
+	var bLazy = new Blazy({ 
+        container: '.hero-slick' // Default is window
+    });
+
+
+	jQuery('.hero-slick').on('afterChange', function(event, slick, direction){
+	  bLazy.revalidate();
+	  // left
 	});
 
 	jQuery("#share").jsSocials({
@@ -44,11 +54,3 @@ WebFont.load({
      families: ['Lato:400,300,700']
    }
  });
-
- // Init BLazy for lazy loading
- ;(function() {
- 	// Initialize
- 	var bLazy = new Blazy({
- 		loadInvisible: true
- 	});
- })();
