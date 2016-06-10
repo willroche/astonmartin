@@ -30,7 +30,7 @@ jQuery(function() {
 		showLabel: false,
     	showCount: false,
         shares: ["facebook", "twitter", "linkedin", "googleplus"]
-  });
+  	});
 
 	jQuery(".i-search, .i-search-close").click(function() {
 		jQuery("#search").fadeToggle(300);
