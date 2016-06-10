@@ -4197,3 +4197,16 @@ figcaption {
 .path-user #main-wrapper {
   margin-top: 200px;
 }
+.t-basic {
+  margin: 50px 0 50px 0;
+}
+@media (min-width: 768px) and (max-width: 1079px) {
+  .t-basic {
+    margin: 30px 0 30px 0;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .t-basic {
+    margin: 20px 0 20px 0;
+  }
+}
