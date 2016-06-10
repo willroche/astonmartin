@@ -3706,7 +3706,8 @@ footer .copyright .copyright-content {
   background: #ffffff;
   color: #000000;
 }
-.button.submit {
+.button.submit,
+.button.form-submit {
   background: #000000;
   color: #ffffff;
   border: 0;
@@ -3719,7 +3720,8 @@ footer .copyright .copyright-content {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-.button.submit:hover {
+.button.submit:hover,
+.button.form-submit:hover {
   background: #ffffff;
   color: #000000;
 }
@@ -3832,6 +3834,9 @@ footer .copyright .copyright-content {
   -ms-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+}
+.form-submit {
+  padding: 12px 20px;
 }
 @media (min-width: 768px) and (max-width: 1079px) {
   .slice-updates form {
@@ -4058,6 +4063,28 @@ footer .copyright .copyright-content {
   .search-results .form-actions .form-submit {
     background: transparent url("../images/i-mag-search@2x.png") 0% 0% no-repeat;
     background-size: 66px 66px;
+  }
+}
+.user-login-form {
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-bottom: 40px;
+}
+.user-login-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+.user-login-form input {
+  display: block;
+  margin-bottom: 10px;
+}
+.user-login-form input.form-text {
+  padding: 10px;
+  border: 1px solid #999999;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .user-login-form input {
+    width: 100%;
   }
 }
 .no-scroll {
