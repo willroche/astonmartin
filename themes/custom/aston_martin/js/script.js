@@ -47,6 +47,7 @@ jQuery(function() {
 	jQuery( document ).ajaxComplete(function( event,request, settings ) {
 		jQuery( ".search-panel:nth-child(3n+4)" ).after( "<div class='h-clearfix'></div>" );
 	});
+
 });
 
 WebFont.load({

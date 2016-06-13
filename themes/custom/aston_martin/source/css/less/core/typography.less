@@ -328,8 +328,21 @@ blockquote {
 
 .t-content {
 	h1 {
-		.h1();
+		font-size: 60px;
+		line-height: 70px;
+		font-family: @lato;
+		font-weight: 400;
+		letter-spacing: -2.5px;
+		text-transform: uppercase;
 		margin: 0 0 35px 0;
+		@media @md {
+			font-size: 55px;
+			line-height: 65px;
+		}
+		@media @sm {
+			font-size: 45px;
+			line-height: 55px;
+		}
 	}
 	h3 {
 		.h3();
@@ -422,7 +435,10 @@ blockquote {
 			width: 36px;
 			height: 30px;
 			display: block;
-			margin: 0 auto;
+			margin: 0 0 0 20%;
+			@media @sm {
+				margin: 0 auto;
+			}
 		}
 		&:after {
 			content: '';
@@ -430,7 +446,10 @@ blockquote {
 			width: 36px;
 			height: 30px;
 			display: block;
-			margin: 0 auto;
+			margin: 0 0 0 70%;
+			@media @sm {
+				margin: 0 auto;
+			}
 		}
 	}
 }

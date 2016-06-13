@@ -10,7 +10,7 @@
 
 /* Slider */
 
-.hero-slick {
+.hero-slick, .slick-slider {
 	.slick-dots {
 		bottom: 50px;
 		@media @md {
@@ -22,15 +22,27 @@
 		li {
 			width: 73px;
 			height: 10px;
+            @media @sm {
+                width: 40px;
+                height: 7px;
+            }
 			button {
 				width: 73px;
 				height: 10px;
+                @media @sm {
+                    width: 40px;
+                    height: 7px;
+                }
 				&:before {
 					content: '';
 					height: 10px;
 					width: 73px;
 					background: rgba(255, 255, 255, 0.3);
 					opacity: 1;
+                    @media @sm {
+                        width: 40px;
+                        height: 7px;
+                    }
 				}
 			}
 			&.slick-active {
@@ -58,6 +70,29 @@
 			color: black;
 		}
 	}
+}
+
+.slick-slider {
+    .slick-dots {
+         @media @md {
+            bottom: 50px;
+        }
+        @media @sm {
+            bottom: 50px;
+        }
+    }
+}
+
+.hero-slick {
+    .slick-dots {
+        bottom: 50px;
+        @media @md {
+            bottom: 15px;
+        }
+        @media @sm {
+            bottom: 15px;
+        }
+    }
 }
 
 .slick-slider {
@@ -123,6 +158,7 @@
     float: left;
     height: 100%;
     min-height: 1px;
+    outline: none;
     [dir="rtl"] & {
         float: right;
     }
