@@ -2788,7 +2788,7 @@ blockquote {
 @media (min-width: 0px) and (max-width: 767px) {
   .hero-slick .slick-dots li,
   .slick-slider .slick-dots li {
-    width: 40px;
+    width: 25px;
     height: 7px;
   }
 }
@@ -2800,7 +2800,7 @@ blockquote {
 @media (min-width: 0px) and (max-width: 767px) {
   .hero-slick .slick-dots li button,
   .slick-slider .slick-dots li button {
-    width: 40px;
+    width: 25px;
     height: 7px;
   }
 }
@@ -2815,7 +2815,7 @@ blockquote {
 @media (min-width: 0px) and (max-width: 767px) {
   .hero-slick .slick-dots li button:before,
   .slick-slider .slick-dots li button:before {
-    width: 40px;
+    width: 25px;
     height: 7px;
   }
 }
@@ -3219,6 +3219,22 @@ blockquote {
 }
 .sticky .header-gradient {
   height: 75px;
+}
+.am-logo img {
+  height: 79px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.sticky .am-logo img {
+  height: 47px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .am-logo img {
+    height: 47px;
+  }
 }
 .main-menu {
   position: relative;
@@ -4097,14 +4113,20 @@ footer .copyright .copyright-content {
   }
 }
 .search-results form {
-  margin-bottom: 80px;
+  position: relative;
+  width: 50%;
+  margin: 0 auto 80px;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .search-results form {
+    width: 80%;
+  }
 }
 .search-results .form-type-textfield {
   margin: 0;
   padding: 0;
   display: inline-block;
-  width: 50%;
-  margin-right: 20px;
+  width: 100%;
 }
 .search-results .form-type-textfield input {
   width: 100%;
@@ -4117,6 +4139,9 @@ footer .copyright .copyright-content {
   display: inline-block;
   margin: 0;
   padding: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 .search-results .form-actions .form-submit {
   background: transparent url("../images/i-mag-search.png") 0% 0% no-repeat;
@@ -4254,6 +4279,11 @@ footer .copyright .copyright-content {
 #share a {
   padding: 8px 30px;
 }
+@media (min-width: 0px) and (max-width: 767px) {
+  #share a {
+    padding: 8px 20px;
+  }
+}
 .align-left {
   margin-right: 10px;
   margin-bottom: 10px;
@@ -4285,6 +4315,11 @@ figcaption {
 }
 .video-embed-field-responsive-video {
   margin: 10px 0 20px 0;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .views-row.l-col-4 {
+    margin-bottom: 20px;
+  }
 }
 .views-row a img {
   margin: 0 auto;

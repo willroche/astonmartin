@@ -3095,6 +3095,17 @@ blockquote {
     padding-top: 20px;
   }
 }
+.c-logo {
+  height: 79px;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.sticky .c-logo {
+  height: 47px;
+}
 .logo {
   background: transparent url("../images/logo.png") 0% 0% no-repeat;
   width: 150px;
