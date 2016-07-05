@@ -3649,6 +3649,10 @@ footer .copyright .copyright-content {
     height: 550px;
   }
 }
+.home-hero .home-hero-dim {
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
 @media (min-width: 0px) and (max-width: 767px) {
   .home-hero.contact-hero {
     height: 400px;
@@ -3928,6 +3932,13 @@ footer .copyright .copyright-content {
     margin: 0 auto;
   }
 }
+.slice-updates form label {
+  display: none;
+}
+.slice-updates form select.invalid,
+.slice-updates form input.invalid {
+  color: red;
+}
 .text {
   border: 1px solid #999999;
   line-height: 38px;
@@ -4009,6 +4020,7 @@ footer .copyright .copyright-content {
   height: 39px;
   display: block;
   float: left;
+  margin: 0;
 }
 @media (min-width: 768px) and (max-width: 1079px) {
   .slice-updates .submit {

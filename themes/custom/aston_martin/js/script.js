@@ -17,11 +17,11 @@ jQuery(function() {
 	});
 
 	var bLazy = new Blazy({ 
-        container: '.hero-slick' // Default is window
+        container: ".hero-slick" // Default is window
     });
 
 
-	jQuery('.hero-slick').on('afterChange', function(event, slick, direction){
+	jQuery(".hero-slick").on('afterChange', function(event, slick, direction){
 	  bLazy.revalidate();
 	  // left
 	});
@@ -55,3 +55,4 @@ WebFont.load({
      families: ['Lato:400,300,700']
    }
  });
+
