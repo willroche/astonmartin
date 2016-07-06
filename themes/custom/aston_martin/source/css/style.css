@@ -2321,14 +2321,14 @@ blockquote {
 }
 @media (min-width: 768px) and (max-width: 1079px) {
   .t-content h1 {
-    font-size: 55px;
-    line-height: 65px;
+    font-size: 40px;
+    line-height: 47px;
   }
 }
 @media (min-width: 0px) and (max-width: 767px) {
   .t-content h1 {
-    font-size: 45px;
-    line-height: 55px;
+    font-size: 40px;
+    line-height: 47px;
   }
 }
 .t-content h3 {
@@ -3614,6 +3614,12 @@ footer .copyright .copyright-content {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
+@media (min-width: 768px) and (max-width: 1079px) {
+  .box-holder .box-content {
+    padding: 20px 10px 20px 10px;
+    width: 96%;
+  }
+}
 .b-lazy {
   -webkit-transition: opacity 500ms ease-in-out;
   -moz-transition: opacity 500ms ease-in-out;
@@ -3938,6 +3944,10 @@ footer .copyright .copyright-content {
 .slice-updates form select.invalid,
 .slice-updates form input.invalid {
   color: red;
+  border: 1px solid red;
+}
+.formError {
+  display: none !important;
 }
 .text {
   border: 1px solid #999999;
@@ -3947,6 +3957,7 @@ footer .copyright .copyright-content {
   font-size: 16px;
   font-family: 'lato', Arial, sans-serif;
   outline: none;
+  background: #ffffff;
   appearance: none;
   box-shadow: none;
   border-radius: none;
@@ -3962,6 +3973,7 @@ footer .copyright .copyright-content {
   width: 17%;
   float: left;
   display: block;
+  -webkit-appearance: none;
 }
 @media (min-width: 768px) and (max-width: 1079px) {
   .slice-updates .text {

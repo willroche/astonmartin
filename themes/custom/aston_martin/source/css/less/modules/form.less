@@ -24,9 +24,14 @@
 		select, input {
 			&.invalid {
 				color: red;
+				border: 1px solid red;
 			}
 		}
 	}
+}
+
+.formError {
+	display: none !important;
 }
 
 .text {
@@ -37,11 +42,12 @@
 	font-size: 16px;
 	font-family: @lato;
 	outline: none;
+	background: @bg-light;
 	appearance: none;
-		box-shadow: none;
-		border-radius: none;
-		color: #999999;
-		height: 39px;
+	box-shadow: none;
+	border-radius: none;
+	color: #999999;
+	height: 39px;
 		.slice-contact & {
 			width: 100%;
 			margin-bottom: 20px;
@@ -51,6 +57,8 @@
 			width: 17%;
 			float: left;
 			display: block;
+			-webkit-appearance:none;
+
 			@media @md {
 				width: 100%;
 				float: none;
