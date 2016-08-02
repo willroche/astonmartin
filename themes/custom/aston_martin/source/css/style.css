@@ -1911,7 +1911,7 @@ body {
   }
 }
 body {
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
 }
 a {
   -webkit-transition: all 0.3s ease-in-out;
@@ -1930,7 +1930,7 @@ a .link {
   color: #000000;
   border-top: #000000 1px solid;
   padding-top: 8px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
 }
 a.back-to-aston {
   color: #ffffff;
@@ -1939,12 +1939,12 @@ a.back-to-aston {
   display: inline-block;
   margin-left: 39px;
   text-transform: uppercase;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
 }
 h1 {
   font-size: 99px;
   line-height: 100px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -2.5px;
   text-transform: uppercase;
@@ -1969,7 +1969,7 @@ h1 {
 }
 h2 {
   font-size: 43px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -1987,14 +1987,14 @@ h2 {
 }
 h3 {
   font-size: 32px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
 }
 h4 {
   font-size: 26px;
   line-height: 34px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
 }
 @media (min-width: 768px) and (max-width: 1079px) {
@@ -2017,7 +2017,7 @@ h5 {
 p {
   font-size: 19px;
   line-height: 34px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-weight: normal;
   margin: 0 0 20px 0;
 }
@@ -2035,7 +2035,7 @@ blockquote {
   width: 100%;
   font-size: 24px;
   line-height: 30px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-style: italic;
   padding: 24px 0;
 }
@@ -2082,7 +2082,7 @@ blockquote {
 }
 .masonary .box-label {
   font-size: 16px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   background: #000000;
   color: #ffffff;
@@ -2092,7 +2092,7 @@ blockquote {
 .t-hero h1 {
   font-size: 99px;
   line-height: 100px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -2.5px;
   text-transform: uppercase;
@@ -2119,7 +2119,7 @@ blockquote {
 .t-hero h4 {
   font-size: 26px;
   line-height: 34px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   margin: 22px 0px 34px 0px;
 }
@@ -2143,7 +2143,7 @@ blockquote {
 }
 .t-updates h2 {
   font-size: 43px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -2163,13 +2163,13 @@ blockquote {
   font-size: 22px;
   line-height: 28px;
   font-weight: normal;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   margin: 0 0 30px 0;
 }
 .t-search h1 {
   font-size: 99px;
   line-height: 100px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -2.5px;
   text-transform: uppercase;
@@ -2204,7 +2204,7 @@ blockquote {
 }
 .t-listing a h3 {
   font-size: 32px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -2230,7 +2230,7 @@ blockquote {
   line-height: 28px;
   font-weight: normal;
   font-size: 16px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   margin: 0;
   letter-spacing: 1.3px;
   color: #000000;
@@ -2254,7 +2254,7 @@ blockquote {
   }
 }
 .t-listing a p {
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-style: italic;
   color: #000000;
   font-size: 16px;
@@ -2283,7 +2283,7 @@ blockquote {
 .t-category h4 {
   font-size: 26px;
   line-height: 34px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;
@@ -2313,7 +2313,7 @@ blockquote {
 .t-content h1 {
   font-size: 60px;
   line-height: 70px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -2.5px;
   text-transform: uppercase;
@@ -2333,10 +2333,10 @@ blockquote {
 }
 .t-content h3 {
   font-size: 32px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-size: 26px;
   margin: 0;
   font-style: italic;
@@ -2345,7 +2345,7 @@ blockquote {
 .t-content h4 {
   font-size: 26px;
   line-height: 34px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   text-transform: uppercase;
   margin: 50px 0 20px 0;
@@ -2366,7 +2366,7 @@ blockquote {
   font-size: 22px;
   line-height: 28px;
   font-weight: normal;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   text-transform: uppercase;
   margin: 0 0 30px 0;
   line-height: 36px;
@@ -2374,7 +2374,7 @@ blockquote {
 .t-content p.caption {
   font-size: 17px;
   line-height: 25px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   margin: 10px 0 30px 0;
 }
 .t-content .image {
@@ -2426,7 +2426,7 @@ blockquote {
 .t-content ul {
   font-size: 19px;
   line-height: 34px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-weight: normal;
   margin: 0 0 20px 0;
   text-align: left;
@@ -2440,7 +2440,7 @@ blockquote {
 .t-content ol {
   font-size: 19px;
   line-height: 34px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-weight: normal;
   margin: 0 0 20px 0;
   text-align: left;
@@ -2457,7 +2457,7 @@ blockquote {
 .t-content blockquote p {
   font-size: 19px;
   line-height: 34px;
-  font-family: miller_displayroman, times, serif;
+  font-family: 'OptimaLTPro-Roman', times, serif;
   font-weight: normal;
   margin: 0 0 20px 0;
   font-style: italic;
@@ -2518,7 +2518,7 @@ blockquote {
 .t-share h4 {
   font-size: 26px;
   line-height: 34px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   font-size: 24px;
   font-weight: 100;
@@ -2540,7 +2540,7 @@ blockquote {
 }
 .t-also h3 {
   font-size: 32px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   letter-spacing: -0.5px;
   text-transform: uppercase;
@@ -2706,10 +2706,14 @@ blockquote {
   display: block !important;
 }
 @font-face {
-  font-family: 'miller_displayroman';
-  src: url('../fonts/miller-displayroman_30509-webfont.woff2') format('woff2'), url('../fonts/miller-displayroman_30509-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'OptimaLTPro-Roman';
+  src: url('../fonts/31A5C9_0_0.eot');
+  src: url('../fonts/31A5C9_0_0.eot?#iefix') format('embedded-opentype'), url('../fonts/31A5C9_0_0.woff2') format('woff2'), url('../fonts/31A5C9_0_0.woff') format('woff'), url('../fonts/31A5C9_0_0.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'OptimaLTPro-Bold';
+  src: url('../fonts/31A5C9_1_0.eot');
+  src: url('../fonts/31A5C9_1_0.eot?#iefix') format('embedded-opentype'), url('../fonts/31A5C9_1_0.woff2') format('woff2'), url('../fonts/31A5C9_1_0.woff') format('woff'), url('../fonts/31A5C9_1_0.ttf') format('truetype');
 }
 .h-ir {
   background-color: transparent;
@@ -3140,6 +3144,16 @@ blockquote {
 .slice.slice-article-holder {
   padding-top: 100px;
 }
+@media (min-width: 768px) and (max-width: 1079px) {
+  .slice.slice-article-holder {
+    padding-top: 40px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .slice.slice-article-holder {
+    padding-top: 20px;
+  }
+}
 .slice.slice-category {
   background: #000000;
   padding: 35px 0;
@@ -3327,6 +3341,47 @@ blockquote {
     background-size: 22px 22px;
   }
 }
+.cc_container {
+  background: #f1f1f2 !important;
+  text-transform: uppercase !important;
+  border-top: 1px solid #fff !important;
+  padding: 23px 40px !important;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .cc_container {
+    padding: 20px 10px !important;
+  }
+}
+.cc_container .cc_message {
+  text-align: center;
+  font-size: 12px !important;
+  color: #666 !important;
+  line-height: 17px !important;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif !important;
+  margin: 0 !important;
+}
+.cc_container .cc_message a {
+  color: #000000 !important;
+}
+.cc_container .cc_btn {
+  font-size: 0 !important;
+  width: 16px !important;
+  height: 16px !important;
+  display: inline-block !important;
+  background: transparent url("../images/i-cookie-closes.png") 0% 0% no-repeat !important;
+}
+@media (-webkit-min-device-pixel-ratio: 2), (min--moz-device-pixel-ratio: 2), (-o-min-device-pixel-ratio: 2/1), (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .cc_container .cc_btn {
+    background: transparent url("../images/i-cookie-closes@2x.png") 0% 0% no-repeat;
+    background-size: 16px 16px;
+  }
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .cc_container .cc_btn {
+    padding: 0 !important;
+    margin: 0px 0px 10px 10px !important;
+  }
+}
 footer ul.footer-nav {
   list-style: none;
   margin: 0;
@@ -3343,7 +3398,7 @@ footer ul.footer-nav li {
   margin: 0 0 10px 0;
 }
 footer ul.footer-nav li a {
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 300;
   color: #999999;
   text-transform: uppercase;
@@ -3376,7 +3431,7 @@ footer .footer-logo {
   }
 }
 footer .social {
-  float: right;
+  text-align: right;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   footer .social {
@@ -3466,24 +3521,23 @@ footer .social .circle .icon.pinterest {
   }
 }
 footer .copyright {
-  margin-top: 70px;
+  margin-top: 40px;
+  text-align: right;
 }
 @media (min-width: 0px) and (max-width: 767px) {
   footer .copyright {
     text-align: center;
-    margin-top: 40px;
+    margin-top: 20px;
   }
 }
 footer .copyright .copyright-content {
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 300;
   color: #999999;
   text-transform: uppercase;
   font-size: 16px;
 }
 .masonary {
-  max-width: 1296px;
-  max-height: 2516px;
   margin: 10px auto;
   width: 100%;
   height: 100%;
@@ -3556,10 +3610,17 @@ footer .copyright .copyright-content {
 .box.box7 {
   width: 56.79012345679012%;
   padding-bottom: 42.39123%;
+  background-position: 10% 50%;
 }
 .box.box8 {
   width: 98.4567901234568%;
   padding-bottom: 30.123455%;
+  background-position: 50% 75%;
+}
+@media (min-width: 768px) and (max-width: 1079px) {
+  .box.box8 {
+    padding-bottom: 40%;
+  }
 }
 .box.box9 {
   width: 40.123456790123456%;
@@ -3634,7 +3695,7 @@ footer .copyright .copyright-content {
 .blazy__caption {
   font-size: 17px;
   line-height: 25px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   margin: 10px 0 30px 0;
 }
 .home-hero {
@@ -3745,7 +3806,7 @@ footer .copyright .copyright-content {
 }
 .main-menu-holder nav ul li a {
   font-size: 38px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   color: #ffffff;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease-out;
@@ -3769,7 +3830,7 @@ footer .copyright .copyright-content {
 }
 .button.button-hero {
   font-size: 17px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   color: #ffffff;
   background: transparent;
@@ -3806,7 +3867,7 @@ footer .copyright .copyright-content {
   color: #ffffff;
   border: 0;
   text-transform: uppercase;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   letter-spacing: 3px;
   -webkit-transition: all 0.3s ease-out;
   -moz-transition: all 0.3s ease-out;
@@ -3819,14 +3880,51 @@ footer .copyright .copyright-content {
   background: #ffffff;
   color: #000000;
 }
-.button.pagination {
+.button.pagination.prev {
+  position: relative;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .button.pagination.prev {
+    margin-bottom: 10px;
+  }
+}
+.button.pagination.prev:before {
+  content: '';
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 15px 7.5px 0;
+  border-color: transparent #ffffff transparent transparent;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 14px;
+}
+.button.pagination.next {
+  position: relative;
+}
+.button.pagination.next:after {
+  content: '';
+  right: 10px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7.5px 0 7.5px 15px;
+  border-color: transparent transparent transparent #ffffff;
+  display: inline-block;
+  z-index: 1;
+  position: absolute;
+  top: 14px;
+}
+.button.pagination a {
   background: #000000;
   color: #ffffff;
   width: 100%;
   text-align: center;
   display: inline-block;
   font-size: 18px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   padding-top: 10px;
@@ -3838,33 +3936,11 @@ footer .copyright .copyright-content {
   -o-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
 }
-@media (min-width: 0px) and (max-width: 767px) {
-  .button.pagination.counter-1 {
-    margin-bottom: 10px;
-  }
-}
-.button.pagination.counter-1 span {
-  left: 10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7.5px 15px 7.5px 0;
-  border-color: transparent #ffffff transparent transparent;
-}
-.button.pagination.counter-2 span {
-  right: 10px;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 7.5px 0 7.5px 15px;
-  border-color: transparent transparent transparent #ffffff;
-}
-.button.pagination span {
-  position: absolute;
-  top: 14px;
-}
-.button.pagination:hover {
+.button.pagination a:hover {
   background: rgba(0, 0, 0, 0.8);
+}
+.flippy {
+  list-style: none;
 }
 .button-nav {
   float: left;
@@ -3955,7 +4031,7 @@ footer .copyright .copyright-content {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 16px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   outline: none;
   background: #ffffff;
   appearance: none;
@@ -4009,7 +4085,7 @@ footer .copyright .copyright-content {
 .search {
   padding: 30px 20px;
   font-size: 16px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   outline: none;
   appearance: none;
   box-shadow: none;
@@ -4158,6 +4234,7 @@ footer .copyright .copyright-content {
   padding: 0 20px;
   margin: 0;
   line-height: 66px;
+  outline: 0;
 }
 .search-results .form-actions {
   display: inline-block;
@@ -4288,7 +4365,7 @@ footer .copyright .copyright-content {
 }
 .article-tag {
   font-size: 21px;
-  font-family: 'lato', Arial, sans-serif;
+  font-family: 'OptimaLTPro-Roman', Arial, sans-serif;
   font-weight: 400;
   background: #000000;
   color: #ffffff;

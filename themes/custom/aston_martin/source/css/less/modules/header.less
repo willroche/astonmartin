@@ -116,5 +116,37 @@
 	cursor: pointer;
 }
 
+.cc_container {
+	background: #f1f1f2 !important;
+    text-transform: uppercase !important;
+    border-top: 1px solid #fff !important;
+    padding: 23px 40px !important;
+    @media @sm {
+    	padding: 20px 10px !important;
+    }
+    .cc_message {
+    	text-align: center;
+    	font-size: 12px !important;
+    	color: #666 !important;
+    	line-height: 17px !important;
+    	font-family: @lato !important;
+    	margin: 0 !important;
+    	a {
+    		color: #000000 !important;
+    	}
+    }
+    .cc_btn {
+    	font-size: 0 !important;
+    	width: 16px !important;
+    	height: 16px !important;
+    	display: inline-block !important;
+    	.bg-hi-dpi( transparent, '@{dir-images}i-cookie-closes.png', 0%, 0%, no-repeat, 16px, 16px) !important;
+    	@media @sm {
+    		padding: 0 !important;
+    		margin: 0px 0px 10px 10px !important;
+    	}
+    }
+}
+
 // END OF SCOPE
 }

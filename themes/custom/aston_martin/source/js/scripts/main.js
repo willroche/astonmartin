@@ -21,10 +21,11 @@ $(function() {
 	$(".hero-slick").slick({
     	dots: true,
     	arrows: false,
-    	// autoplay: true,
     	infinite: false,
     	slidesToShow: 1,
-    	slidesToScroll: 1
+    	slidesToScroll: 1,
+		autoplay: true,
+		autoplaySpeed: 2000
 	});
 
 	// Toggle class on nav stripes

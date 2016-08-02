@@ -90,11 +90,10 @@
 		<div class="l-col-12 l-content t-light main-menu h-clearfix">
 			<div class="l-col-4 f-col-4 l-padding">
 				<div class="i-search"></div>
-				<a class="back-to-aston h-hidden-sm" href="http://www.astonmartin.com/">astonmartin.com</a>
 			</div>
 			<div class="l-col-4 f-col-4 l-padding t-center">
 				<!-- <a href="/"><div class="logo"></div></a> -->
-				<a class="am-logo" href="/"><img src="http://www.iln.co.uk/aston/themes/custom/aston_martin/source/images/logo@2x.png" alt="Aston Martin Logo" /></a>
+				<a class="am-logo" href="/"><img src="/themes/custom/aston_martin/source/images/logo@2x.png" alt="Aston Martin Logo" /></a>
 
 			</div>
 			<div class="l-col-4 f-col-4 l-padding">
@@ -153,16 +152,16 @@
         <div class="l-col-4 l-padding">
           {{ page.footer_right }}
         </div>
-      </div>
-    {% endif %}
-    {% if page.footer_bottom %}
-      <div class="l-col-12 l-content">
-    		<div class="l-col-12 l-padding copyright">
-        {{ page.footer_bottom }}
+        <div class="l-col-4 l-padding h-visible-sm">
+          {{ page.footer_left }}
         </div>
       </div>
     {% endif %}
   </div>
 </footer>
 
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js"></script>
+<script type="text/javascript">
+    window.cookieconsent_options = {"message":"We use cookies on our website. By continuing to use this website you consent to the storing and accessing of cookies on your device in accordance with our Cookie Policy. To learn more about cookies, how we use them on our site and how to change your settings please view our Cookie Policy","dismiss":"Got it!","learnMore":"More info","link":"https://magazine.astonmartin.com/cookie-policy","theme":"dark-bottom"};
+</script>
+
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js"></script>
